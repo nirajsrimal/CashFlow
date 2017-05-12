@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+<RelativeLayout
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/de"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentTop="true"/>
+    <TextView android:id="@+id/rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentRight="true"
+        android:text="400"
+        android:layout_margin="10dp"
+        android:textSize="25dp"/>
+    <TextView android:id="@+id/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/de"
+        android:text="Income"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black_overlay"/>
+    <TextView android:id="@+id/incsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/de"
+        android:text="Income"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_dark"/>
+
+    <TextView android:id="@+id/expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/amount"
+        android:layout_below="@+id/cat"
+        />
+    <TextView android:id="@+id/expsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cat"
+        android:text="Expense"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

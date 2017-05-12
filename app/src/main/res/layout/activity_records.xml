@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.niraj.cashflow.records">
+
+    <TextView android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:text="Records"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="20dp"
+        android:background="#FF5D80DA"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+    <TextView android:id="@+id/acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/spinner"
+        android:text="Account :"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:layout_alignBottom="@+id/spinner"
+        android:textSize="30dp"/>
+    <Spinner
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txt"/>
+
+    <LinearLayout
+        android:layout_below="@+id/spinner"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance : 0.0"
+            android:textSize="35dp"
+            android:gravity="center"
+            />
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_overlay"
+            android:text="All transactions"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"/>
+        <ListView android:id="@+id/listview"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
